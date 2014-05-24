@@ -34,7 +34,6 @@ namespace Security.Layer.Encryption
         }
     }
 
-
     public class Encrypt
     {
         /// <summary>
