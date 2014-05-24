@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajax" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="App_Themes/Theme1/Style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="tudo">
+
+        <ajax:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server"></ajax:ToolkitScriptManager>
+
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+
+                <asp:UpdateProgress ID="UpdateProgress1" runat="server">
+                    <ProgressTemplate>
+                        Carregando....
+                    </ProgressTemplate>
+                </asp:UpdateProgress>
+                <asp:Panel ID="pnlBarraUniversal" runat="server" Width="150px">
+                    <asp:HyperLink ID="hplBUGerenciarConta" runat="server" CssClass="pnlBU" NavigateUrl="#" Width="130px">Gerenciar Conta</asp:HyperLink>
+                    <br />
+                    <asp:HyperLink ID="hplBUEditarPerfil" runat="server" CssClass="pnlBU" NavigateUrl="#" Width="130px">Editar Perfil</asp:HyperLink>
+                    <br />
+                    <hr style="width:130px"/>
+                    <asp:HyperLink ID="hplBUSair" runat="server" CssClass="pnlBU" NavigateUrl="#" Width="130px">Sair</asp:HyperLink>
+                    <br />
+                </asp:Panel>
+
+                <ajax:DropDownExtender ID="DropDownExtender1" runat="server" TargetControlID="bUPerfil" DropDownControlID="pnlBarraUniversal" HighlightBackColor="Transparent" HighlightBorderColor="Transparent" DropArrowBackColor="Transparent"/>
+
+                <div id="barraUniversal">
+                    <div id="bUContent">
+                        <a href="Default.aspx"><asp:Image ID="Image1" runat="server" ImageUrl="~/img/logomarca.png" CssClass="bULogo" /></a>
+                        <div id="bURight">
+                            <div id="bUPerfil" runat="server">
+                                <asp:Label ID="Label1" runat="server" Text="Gabriel Moblicci" CssClass="bUPerfil"></asp:Label>
+                                <a href="#"><asp:Image ID="imgBUPerfil" runat="server" Width="32px" Height="32px" ImageUrl="~/img/DSC01610.jpg" CssClass="bUPerfil"/></a>
+                            </div>
+                            <div id="bUMenu">
+                                <asp:HyperLink ID="hplForum" runat="server" CssClass="bUMenu" NavigateUrl="#">Fórum</asp:HyperLink>
+                                <div class="bUDiv"></div>
+                                <asp:HyperLink ID="hplColunas" runat="server" CssClass="bUMenu" NavigateUrl="#">Colunas</asp:HyperLink>
+                                <div class="bUDiv"></div>
+                                <asp:HyperLink ID="hplPerfil" runat="server" CssClass="bUMenu" NavigateUrl="Perfil.aspx">Perfil</asp:HyperLink>
+                                <div class="bUDiv"></div>
+                                <asp:HyperLink ID="hplHome" runat="server" CssClass="bUMenu" NavigateUrl="Default.aspx">Home</asp:HyperLink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="bordaVermelhaBarra"></div>
+
+                <div id="ContentPlaceHolder">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                </div>
+
+
+
+<div id="footer">
+                    <div id="imgRodapeEsquerdaDiv">
+                       <asp:Image ID="imgRodapeEsquerda" runat="server" ImageUrl="~/img/fatec.png"/>
+                    </div>
+                    <div id="rodapeCentral">
+                        Conheça o Projeto Mais Fatec<br />
+                        _________________________________________<br />
+                        <br />
+                        Fórum<br />
+                        Colunista<br />
+                        Perfil<br />
+                        Perguntas Mais Frequentes* 
+                    </div>
+                    <div id="imgRodapeDireitaDiv">
+                        <asp:Image ID="imgRodapeDireita" runat="server" ImageUrl="~/img/cps_gesp.png"/>
+                    </div>
+                </div> 
+                <div id="faixaPretaRodape">Projeto dos alunos do 5º semestre do curso de Análise e Desenvolvimento de Sistemas, 2013.</div>
+
+            </ContentTemplate>
+        </asp:UpdatePanel>
+
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,152 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+.demo-section {
+    padding: 30px;
+    width: 577px;
+}
+
+#listView {
+    padding: 10px;
+    margin-bottom: -5px;
+    min-width: 200px;
+    min-height: 100px;
+    margin-top: -5px;
+    overflow: hidden;
+}
+
+.product {
+    float: left;
+    position: relative;
+    width: 111px;
+    height: 144px;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+#txtComentario {
+    width: 500px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.postagem {
+    float: left;
+    position: relative;
+    width: 510px;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border: 1px #CCCCCC solid;
+    margin-top: 5px;
+}
+
+.postagem_integracao {
+    float: left;
+    position: relative;
+    width: 360px;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border: 1px #CCCCCC solid;
+    margin-top: 5px;
+}
+
+.comentario {
+    float: left;
+    position: relative;
+    width: 480px;
+    height: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border: 1px #CCCCCC solid;
+    margin-top: 5px;
+}
+
+.product img {
+    width: 90px;
+    height: 110px;
+    margin-left: 17px;
+    border: 2px #999999 solid;
+}
+
+.product h3 {
+    margin: 0;
+    padding: 3px 5px 0 0;
+    max-width: 96px;
+    overflow: hidden;
+    line-height: 1.1em;
+    font-size: .9em;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #666;
+    margin-left: 20px;
+}
+
+.product p {
+    visibility: hidden;
+}
+
+.product:hover p {
+    visibility: visible;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 200px;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    lis background-color: rgba(10,10,10,0.75);
+    transition: background .2s linear, color .2s linear;
+    -moz-transition: background .2s linear, color .2s linear;
+    -webkit-transition: background .2s linear, color .2s linear;
+    -o-transition: background .2s linear, color .2s linear;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.k-listview:after, .product dl:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.product {
+    float: left;
+    position: relative;
+    width: 115px;
+    height: 144px;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+
+/*BANNER DE CHAMADA PARA O MÓDULO COLUNISTAS*/
+
+#banner_chamada_colunistas {
+    float: right;
+    border: 0px solid;
+    background-color: aquamarine;
+    width: 280px;
+    height: 240px;
+    margin-top: -250px;
+    margin-right: -330px;
+}
+

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 11.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="11.0">
+ <Targets>
+  <Target Name="C:\Users\Luiza\AppData\Local\Temp\tmp3FA7.tmp.cadir\bin\App_Code.dll">
+   <Modules>
+    <Module Name="app_code.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="InteressesBD" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Insert(System.Collections.Generic.List`1&lt;Interesses&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-04-23 08:59:44Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Luiza\Documents\Visual Studio 2012\Projects\Tcc\ModuloColunista\Interface\App_Code\Persistencias" File="InteressesBD.cs" Line="59">Object 'objConection' can be disposed more than once in method 'InteressesBD.Insert(List&lt;Interesses&gt;)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 59</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Update(System.Collections.Generic.List`1&lt;Interesses&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-04-23 08:59:44Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Luiza\Documents\Visual Studio 2012\Projects\Tcc\ModuloColunista\Interface\App_Code\Persistencias" File="InteressesBD.cs" Line="90">Object 'objConexao' can be disposed more than once in method 'InteressesBD.Update(List&lt;Interesses&gt;)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 90</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Mapped" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Command(System.String,System.Data.IDbConnection)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2014-04-23 08:59:44Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\Luiza\Documents\Visual Studio 2012\Projects\Tcc\ModuloColunista\Interface\App_Code\Persistencias" File="Mapped.cs" Line="34">The query string passed to 'IDbCommand.CommandText.set(string)' in 'Mapped.Command(string, IDbConnection)' could contain the following variables 'query'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PerfilBD" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Insert(Usuario)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-04-23 08:59:44Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Luiza\Documents\Visual Studio 2012\Projects\Tcc\ModuloColunista\Interface\App_Code\Persistencias" File="PerfilBD.cs" Line="70">Object 'objConection' can be disposed more than once in method 'PerfilBD.Insert(Usuario)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 70</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SelectEditar(System.Int32,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-04-23 08:59:44Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Luiza\Documents\Visual Studio 2012\Projects\Tcc\ModuloColunista\Interface\App_Code\Persistencias" File="PerfilBD.cs" Line="205">Object 'objConexao' can be disposed more than once in method 'PerfilBD.SelectEditar(int, string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 205</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Update(Usuario)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-04-23 08:59:44Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Luiza\Documents\Visual Studio 2012\Projects\Tcc\ModuloColunista\Interface\App_Code\Persistencias" File="PerfilBD.cs" Line="33">Object 'objConexao' can be disposed more than once in method 'PerfilBD.Update(Usuario)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 33</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PermissoesBD" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Insert(Permissoes)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-04-23 08:59:44Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Luiza\Documents\Visual Studio 2012\Projects\Tcc\ModuloColunista\Interface\App_Code\Persistencias" File="PermissoesBD.cs" Line="63">Object 'objConexao' can be disposed more than once in method 'PermissoesBD.Insert(Permissoes)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 63</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Update(Permissoes)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-04-23 08:59:44Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Luiza\Documents\Visual Studio 2012\Projects\Tcc\ModuloColunista\Interface\App_Code\Persistencias" File="PermissoesBD.cs" Line="35">Object 'objConection' can be disposed more than once in method 'PermissoesBD.Update(Permissoes)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 35</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UsuarioBD" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Insert(Usuario)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-04-23 08:59:44Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Luiza\Documents\Visual Studio 2012\Projects\Tcc\ModuloColunista\Interface\App_Code\Persistencias" File="UsuarioBD.cs" Line="119">Object 'objConexao' can be disposed more than once in method 'UsuarioBD.Insert(Usuario)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 119</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Update(Usuario)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-04-23 08:59:44Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Luiza\Documents\Visual Studio 2012\Projects\Tcc\ModuloColunista\Interface\App_Code\Persistencias" File="UsuarioBD.cs" Line="141">Object 'objConexao' can be disposed more than once in method 'UsuarioBD.Update(Usuario)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 141</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UsuarioAdm()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-04-23 08:59:44Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Luiza\Documents\Visual Studio 2012\Projects\Tcc\ModuloColunista\Interface\App_Code\Persistencias" File="UsuarioBD.cs" Line="25">Object 'objConexao' can be disposed more than once in method 'UsuarioBD.UsuarioAdm()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 25</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Do not dispose objects multiple times</Name>
+   <Description>A correctly implemented Dispose method can be called multiple times without throwing an exception. However, this is not guaranteed and to avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.</Description>
+   <Resolution Name="Default">Object {0} can be disposed more than once in method {1}. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 90</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Review SQL queries for security vulnerabilities</Name>
+   <Description>A SQL command string built from user input is vulnerable to SQL injection attacks. Microsoft SQL Server and other database servers support stored procedures and parameterized SQL queries, which reduce the risk of injection attacks.</Description>
+   <Resolution Name="WithNonLiterals">The query string passed to {0} in {1} could contain the following variables {2}. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="11.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
