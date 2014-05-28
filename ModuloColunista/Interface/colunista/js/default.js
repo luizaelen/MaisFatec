@@ -80,3 +80,12 @@
 
 
 })
+/*
+function () { 
+    this.UsuarioId = null; 
+    this.Nome = ""; 
+    this.Perfil = new Perfil(); 
+    this.Postagens = []; 
+    this.Comentarios = []; 
+}
+*/

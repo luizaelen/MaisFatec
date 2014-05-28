@@ -6,7 +6,7 @@
         <div id="perfilTopo">
             <asp:Image ID="imgPerfilCapa1" runat="server" CssClass="perfilCapa" Width="150px" Height="150px"/>
             <asp:Image ID="imgPerfilCapa2" runat="server" CssClass="perfilCapa" Width="150px" Height="150px" />
-            <asp:Image ID="imgPerfilFoto" runat="server" CssClass="perfilFoto" Width="180px" Height="180px" />
+            <asp:Image ID="imgPerfilFoto" runat="server" CssClass="perfilFoto" Width="180px" Height="180px" ImageUrl="~/FotosPerfil/1.jpg" />
             <asp:Image ID="imgPerfilCapa3" runat="server" CssClass="perfilCapa" Width="150px" Height="150px" />
             <asp:Image ID="imgPerfilCapa4" runat="server" CssClass="perfilCapa" Width="150px" Height="150px" />
         </div>

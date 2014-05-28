@@ -28,8 +28,12 @@ public partial class EditarPerfil : System.Web.UI.Page
         Usuario objUsuario = ((Usuario)Session["usuario"]);
         //string filename = System.IO.Path.GetFileName(AsyncFileUpload1.FileName);
         string extension = Path.GetExtension(AsyncFileUpload1.FileName);
-        string filename = (objUsuario.IdUsuario.ToString() + objUsuario.PerfilC.NomePerfil + extension);
+        string filename = (objUsuario.IdUsuario.ToString() + extension);
         AsyncFileUpload1.SaveAs(Server.MapPath("/FotosPerfil/") + filename);
+        //grava a foto no colunista pois lá é usado foto+id como referencia, e aqui é nome+id
+        //string colunista = ("foto" +objUsuario.IdUsuario.ToString() + extension);
+        //AsyncFileUpload1.SaveAs(Server.MapPath("/colunista/images/colunistas/") + colunista);
+        //fim do gravar colunista
         PerfilBD perfilbd = new PerfilBD();
         objUsuario.PerfilC.FotoPerfil = "/FotosPerfil/" + filename;
         perfilbd.Update(objUsuario);

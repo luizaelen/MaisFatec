@@ -157,14 +157,20 @@
                 <%--    <div id="window" style="display:none">
         <div id ="conteudoPostagem"></div>
     </div>--%>
-
+                <script>
+                    function imprime(objeto) {
+                        return console.log(JSON.stringify(objeto))
+                    }
+                </script>
 
                 <script type="text/x-kendo-tmpl" id="template">
-                    <div class="product" onclick="filtrarColunista(${UsuarioId})">
-                      <img src="colunista/images/colunistas/foto${UsuarioId}.jpg" />                        
-                        <h3>#:Nome# </h3>
-                      
-                    </div>
+                   <%--     <div class="product" onclick="filtrarColunista(${UsuarioId})"> --%>                  
+                     <%--     <img src="colunista/images/colunistas/foto${UsuarioId}.jpg" /> --%>     
+                     <div class="product" onclick="filtrarColunista(${UsuarioId})">                  
+                     <img src="/FotosPerfil/${UsuarioId}.jpg" />
+                        <h3>#:Nome#</h3>
+                    </div>                   
+                     
                 </script>
 
                 <script type="text/x-kendo-tmpl" id="templateTema">
@@ -228,16 +234,17 @@
 	    </div>
     </div>--%>
 
-    <div id="modalEditar" data-role="window" data-modal="true" data-width="800px" data-resizable="false"> <%--style="display: none;">--%>
+    <div id="modalEditar" data-role="window" data-modal="true" data-width="800px" data-resizable="false">
+        <%--style="display: none;">--%>
         <label>Conteúdo</label>
         <input id="comentarioTxt" type="text" placeholder="Digite seu comentário" class="k-input" />
         <%--<input type="text" placeholder="Digite seu comentário" class="k-input" data-bind="text: Comentario.Conteudo" />--%>
 
-        <input type="button" value="Editar" onclick="confirmarEdicaoComentario()" id="${uid}"/>
-        
+        <input type="button" value="Editar" onclick="confirmarEdicaoComentario()" id="${uid}" />
+
     </div>
 
-</script>
+    </script>
 
 
 </asp:Content>
